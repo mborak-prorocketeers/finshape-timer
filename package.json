@@ -1,0 +1,54 @@
+{
+  "alfons": true,
+  "author": "Martin Borák",
+  "dependencies": {
+    "@alfons-app/pdk": "^0.11.1",
+    "@fluentui/react-icons": "^2.0.271",
+    "@types/react": "^19.1.13",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@alfons-app/eslint-config": "^0.11.1",
+    "@alfons-app/sandbox": "^0.11.1",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/react-native": "^13.3.3",
+    "@types/jest": "^29.5.13",
+    "babel-preset-expo": "~13.0.0",
+    "jest": "^29.7.0",
+    "jest-expo": "^53.0.10",
+    "react": "19.0.0",
+    "typescript": "~5.8.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@alfons-app"
+    ],
+    "root": true
+  },
+  "jest": {
+    "passWithNoTests": true,
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg|jsonpath-plus)"
+    ]
+  },
+  "license": "",
+  "name": "@alfons-app/effects-timer",
+  "peerDependencies": {
+    "react": "19.0.0"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.npmjs.org/",
+    "scope": "alfons-app"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "sandbox": "sandbox",
+    "test": "jest --silent",
+    "test:watch": "jest --watchAll",
+    "typecheck": "tsc"
+  },
+  "version": "0.0.0"
+}
