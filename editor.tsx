@@ -1,6 +1,6 @@
 import { type PluginDefinition, createSchemaBuilder } from "@alfons-app/pdk";
 import { name } from "./package.json";
-import type Zod from "zod";
+import Zod from "zod";
 import { TimerRegular } from "@fluentui/react-icons";
 
 const $ = createSchemaBuilder(name);
@@ -8,7 +8,7 @@ const $ = createSchemaBuilder(name);
 const Definition = {
   Icon: () => <TimerRegular />,
   schema: $.object({
-    interval: $.number().setupInspector({ control: "Numeric" }),
+    interval: $.number().setupInspector({ control: "Numeric" }).default(0),
     onInterval: $.reference().setupInspector({
       category: "actions",
       sourcing: "reference",

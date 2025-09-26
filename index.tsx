@@ -9,11 +9,12 @@ const timerEffect: Effect<Props> = (props) => {
   const setUpTimer = () => {
     intervalRef.current = setInterval(() => {
       getAction(props.onInterval?.__$ref)?.();
+      console.log("trigger!");
       if (!props.repeat && intervalRef.current) {
         clearInterval(intervalRef.current);
       }
     }, props.interval);
-    
+
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
