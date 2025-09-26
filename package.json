@@ -5,12 +5,14 @@
     "@alfons-app/pdk": "0.19.0",
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@babel/preset-env": "^7.28.3",
-    "@fluentui/react-icons": "^2.0.310"
+    "@fluentui/react-icons": "^2.0.310",
+    "react-native": "^0.81.4",
+    "react-native-web": "^0.21.1"
   },
   "devDependencies": {
-    "@bory875/effects-timer": "link:",
     "@alfons-app/eslint-config": "0.19.0",
     "@alfons-app/sandbox": "0.19.0",
+    "@bory875/effects-timer": "link:",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-hooks": "^8.0.1",
     "@testing-library/react-native": "^13.3.3",
@@ -58,5 +60,5 @@
     "version:minor": "pnpm version minor --git-tag-version=false",
     "version:major": "pnpm version major --git-tag-version=false"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

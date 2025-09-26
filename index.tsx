@@ -1,7 +1,6 @@
 import { ActionContext, type Effect } from "@alfons-app/pdk";
 import { useContext, useEffect, useRef } from "react";
 import type { Props } from "./editor";
-
 const timerEffect: Effect<Props> = (props) => {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const { getAction } = useContext(ActionContext);
@@ -28,7 +27,6 @@ const timerEffect: Effect<Props> = (props) => {
     props.onInterval,
     getAction,
   ]);
-  return null;
 };
 
 export default timerEffect;
