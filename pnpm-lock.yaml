@@ -17,9 +17,6 @@ importers:
       '@babel/preset-env':
         specifier: ^7.28.3
         version: 7.28.3(@babel/core@7.28.4)
-      '@bory875/effects-bar-chart-mborak':
-        specifier: 'link:'
-        version: 'link:'
       '@fluentui/react-icons':
         specifier: ^2.0.310
         version: 2.0.310(react@19.1.0)
@@ -30,6 +27,9 @@ importers:
       '@alfons-app/sandbox':
         specifier: 0.19.0
         version: 0.19.0(e9c5353d617b8f846ae153bd03766f3e)
+      '@bory875/effects-timer':
+        specifier: 'link:'
+        version: 'link:'
       '@testing-library/jest-native':
         specifier: ^5.4.3
         version: 5.4.3(react-native@0.81.4(@babel/core@7.28.4)(@types/react@19.1.1)(bufferutil@4.0.9)(react@19.1.0)(utf-8-validate@6.0.5))(react-test-renderer@18.2.0(react@19.1.0))(react@19.1.0)

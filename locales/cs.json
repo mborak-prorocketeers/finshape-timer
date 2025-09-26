@@ -1,3 +1,7 @@
 {
-    "__name__": "Timer"
+  "__name__": "Timer",
+  "__category__.actions": "Akce",
+  "interval": "Interval",
+  "onInterval": "Po intervalu",
+  "repeat": "Opakovat"
 }

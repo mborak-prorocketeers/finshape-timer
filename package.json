@@ -5,10 +5,10 @@
     "@alfons-app/pdk": "0.19.0",
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@babel/preset-env": "^7.28.3",
-    "@bory875/effects-bar-chart-mborak": "link:",
     "@fluentui/react-icons": "^2.0.310"
   },
   "devDependencies": {
+    "@bory875/effects-timer": "link:",
     "@alfons-app/eslint-config": "0.19.0",
     "@alfons-app/sandbox": "0.19.0",
     "@testing-library/jest-native": "^5.4.3",

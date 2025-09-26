@@ -8,13 +8,17 @@ const $ = createSchemaBuilder(name);
 const Definition = {
   Icon: () => <TimerRegular />,
   schema: $.object({
-    interval: $.number().setupInspector({ control: "Numeric" }).default(0),
+    interval: $.number()
+      .setupInspector({ control: "Numeric", label: "interval" })
+      .default(0),
     onInterval: $.reference().setupInspector({
       category: "actions",
       sourcing: "reference",
+      label: "onInterval",
     }),
     repeat: $.boolean().default(false).setupInspector({
       control: "Switch",
+      label: "repeat",
     }),
   }),
   shouldAllowChild: () => () => false,
